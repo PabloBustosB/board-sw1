@@ -12,8 +12,8 @@ function AppRouter(props) {
     return (
         <Router>
             <Switch>
-                <Route exact path={'/'} component={auth.isLogged()?DashboardPage:HomePage}/>
-                <PrivateRouter path={'/board/:name'} component={BoardPage}/>
+                <Route exact path={'/board-sw1'} component={auth.isLogged()?DashboardPage:HomePage}/>
+                <PrivateRouter path={'/board-sw1/board/:name'} component={BoardPage}/>
             </Switch>
         </Router>
     );

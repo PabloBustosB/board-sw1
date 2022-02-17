@@ -7,7 +7,7 @@ function PrivateRouter({component: Component, ...rest}) {
     return <Route {...rest}>
         {auth.isLogged() ? (<Component/>
         ) : (
-            <Redirect to={'/'}/>
+            <Redirect to={'/board-sw1'}/>
         )}
     </Route>;
 }
