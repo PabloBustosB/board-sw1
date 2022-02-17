@@ -37,7 +37,7 @@ function DashboardPage(props) {
                 <div className={'grid grid-cols-5 gap-4'}>
                     {
                         boards.map((board, index) => {
-                            return  <Link  key={index} to={{pathname:`/board/${board.name}`,state:{boardId:board.id}}} onClick={e =>DB.stop()}>
+                            return  <Link  key={index} to={{pathname:`/board-sw1/board/${board.name}`,state:{boardId:board.id}}} onClick={e =>DB.stop()}>
                              <div className={'bg-white h-48 flex justify-center items-center shadow-lg rounded hover:bg-gray-200'}>
                                  <h2 className={'text-xl order-none capitalize font-medium pt-5'}>{board.name}</h2>
                              </div>
