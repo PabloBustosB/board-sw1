@@ -233,7 +233,7 @@ function BoardPage(props) {
                         <button className={'rounded p-2 hover:shadow-lg bg-red-500 text-white font-medium'}
                                 onClick={e => {
                                     DB.deleteBoard(location.state.boardId).then(() => {
-                                        history.push('/boardSoft')
+                                        history.push('/board-sw1')
                                     })
                                 }}>{'Eliminar'}</button>
 
