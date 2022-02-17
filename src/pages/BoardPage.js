@@ -130,7 +130,7 @@ function BoardPage(props) {
 
                     <button className={'w-full rounded p-1 hover:shadow-lg bg-gray-600 text-white font-medium'}
                             onClick={e => {
-                                history.push('/')
+                                history.push('/board-sw1')
                             }}>{'Salir'}</button>
                     {isOwner &&
                     <button className={'w-full rounded p-1 hover:shadow-lg bg-red-600 text-white font-medium'}
