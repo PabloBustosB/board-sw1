@@ -38,27 +38,22 @@ function Box(props) {
         if(props.boxType==='person'){
             return(
                 <div className={props.action.name==='addArrow'?props.selected.id!==props.id?'personSelected':'person':'person'}  id={props.id}>
-                    <div className={'rounded-full w-10 h-10 bg-blue-700'}></div>
-                    <div className={'rounded w-full bg-blue-700 p-5 -mt-2 text-center'}>
+                    <div className={'rounded-full w-14 h-14 bg-blue-900'}></div>
+                    <div className={'rounded w-full bg-blue-900 p-5 -mt-2 text-center'}>
 
                     <p className={'title'}>{props.title}</p>
-                    <p >{props.content}</p>
+                    <p className={'subtitle'}>{"[Person]"}</p>
+                    <p>{props.content}</p>
                     </div>
-
                 </div>
-             /*   <div className={'rounded text-white flex flex-col justify-center items-center w-auto max-w-xs'} id={props.id}>
-                    <p className={'rounded bg-blue-700 p-5 -mt-2 text-center'}>
-                        <p className={'title'}>{props.title}</p>
-                        <p >{props.content}</p>
-                    </p>
-                </div>*/
             )
         }
 
         if(props.boxType==='system'){
                return(
-                   <div className={props.action.name==='addArrow'?props.selected.id!==props.id?'systemSelected':'system':'system'}  id={props.id}>
+                   <div className={props.action.name==='addArrow'?props.selected.id!==props.id?'systemSelected':'system':'system' }  id={props.id} >
                        <p className={'title'}>{props.title}</p>
+                       <p className={'subtitle'}>{"[Software System]"}</p>
                        <p >{props.content}</p>
                    </div>
                )
@@ -67,6 +62,7 @@ function Box(props) {
             return(
                 <div className={props.action.name==='addArrow'?props.selected.id!==props.id?'containerSelected':'container':'container'}  id={props.id}>
                     <p className={'title'}>{props.title}</p>
+                    <p className={'subtitle'}>{"[Container]"}</p>
                     <p >{props.content}</p>
                 </div>
             )
@@ -75,8 +71,9 @@ function Box(props) {
         if(props.boxType==='database'){
             return(
                 <div className={props.action.name==='addArrow'?props.selected.id!==props.id?'cylinderSelected':'cylinder':'cylinder'}  id={props.id}>
-                    <p className={'title'}>{props.title}</p>
-                    <p className={'text-center text-white'}>{props.content}</p>
+                    <p className={'title-black'}>{props.title}</p>
+                    <p className={'subtitle'}>{"[Container: Database]"}</p>
+                    <p className={'text-center text-black'}>{props.content}</p>
                 </div>
             )
         }
@@ -84,6 +81,7 @@ function Box(props) {
             return(
                 <div className={props.action.name==='addArrow'?props.selected.id!==props.id?'componentSelected':'component':'component'}  id={props.id}>
                     <p className={'title'}>{props.title}</p>
+                    <p className={'subtitle'}>{"[Component]"}</p>
                     <p >{props.content}</p>
                 </div>
             )

@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import HomePage from "../pages/HomePage";
+import SignInSide from "../pages/HomePage";
 import PrivateRouter from "./PrivateRouter";
 import BoardPage from "../pages/BoardPage";
 import UseAuth from "../middlewares/UseAuth";
@@ -12,7 +12,7 @@ function AppRouter(props) {
     return (
         <Router>
             <Switch>
-                <Route exact path={'/board-sw1'} component={auth.isLogged()?DashboardPage:HomePage}/>
+                <Route exact path={'/board-sw1'} component={auth.isLogged()?DashboardPage:SignInSide}/>
                 <PrivateRouter path={'/board-sw1/board/:name'} component={BoardPage}/>
             </Switch>
         </Router>

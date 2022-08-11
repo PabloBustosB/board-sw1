@@ -95,28 +95,28 @@ function BoardPage(props) {
                     <div className={'rounded text-white flex flex-col justify-center items-center'}
                          onDragStart={(e) => e.dataTransfer.setData('shape', 'person')}
                          draggable={'true'}>
-                        <div className={'rounded-full w-10 h-10 bg-blue-700'}></div>
-                        <div className={'rounded w-full bg-blue-700 p-5 -mt-2 text-center'}>Persona</div>
+                        <div className={'rounded-full w-10 h-10 bg-blue-900'}></div>
+                        <div className={'rounded w-full bg-blue-900 p-5 -mt-2 text-center'}>Person</div>
                     </div>
 
-                    <div className={'rounded w-24 p-5 border-2 bg-blue-700 text-white'}
+                    <div className={'rounded w-28 p-5 border-2 bg-grey text-white'}
                          onDragStart={(e) => e.dataTransfer.setData('shape', 'system')}
-                         draggable={'true'}>Sistema
+                         draggable={'true'}>Software System
                     </div>
 
                     <div className={'rounded p-5 border-2 bg-blue-500 text-white'}
                          onDragStart={(e) => e.dataTransfer.setData('shape', 'container')}
-                         draggable={'true'}>Contenedor
+                         draggable={'true'}>Container 
                     </div>
                     <div className={'db text-center p-5'}
                          onDragStart={(e) => e.dataTransfer.setData('shape', 'database')}
                          draggable={'true'}>
-                        <p className={'tex-center text-white'}>Base de datos</p>
+                        <p className={'tex-center text-black'}>Database</p>
                     </div>
 
                     <div className={'rounded p-5 border-2 bg-blue-400 text-white'}
                          onDragStart={(e) => e.dataTransfer.setData('shape', 'component')}
-                         draggable={'true'}>Componente
+                         draggable={'true'}>Component
                     </div>
 
                 </div>
@@ -143,7 +143,7 @@ function BoardPage(props) {
             </div>
 
 
-            <div className={'w-full relative overflow-auto bg-blue-50'}>
+            <div className={'w-full relative overflow-auto bg-yellow-50'}>
                 <Xwrapper>
 
                     <div className={'w-full h-full p-2'}
@@ -184,11 +184,11 @@ function BoardPage(props) {
 
                 <button className={'block'} onClick={e => {
                     setAction({name: 'addArrow', options: {dotted: false}})
-                }}>->
+                }}>{"->"}
                 </button>
                 <button className={'block'} onClick={e => {
                     setAction({name: 'addArrow', options: {dotted: true}})
-                }}>---->
+                }}>{"---->"}
                 </button>
 
                 <button className={'border-2 w-full mt-8 bg-gray-300'}
@@ -209,8 +209,8 @@ function BoardPage(props) {
                 <div className={'mt-2'}>
                     <label>Conector</label>
                     <select className={'w-full'} onChange={e => update(e, 'arrow', e.target.value)}>
-                        <option value="normal">-></option>
-                        <option value="dotted">---></option>
+                        <option value="normal"> {"->"} </option>
+                        <option value="dotted"> {"--->"} </option>
                     </select>
                 </div>
 
