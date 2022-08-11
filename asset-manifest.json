@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/board-sw1/static/css/main.7a8d2e34.chunk.css",
+    "main.js": "/board-sw1/static/js/main.a08f860b.chunk.js",
+    "main.js.map": "/board-sw1/static/js/main.a08f860b.chunk.js.map",
+    "runtime-main.js": "/board-sw1/static/js/runtime-main.8cc61052.js",
+    "runtime-main.js.map": "/board-sw1/static/js/runtime-main.8cc61052.js.map",
+    "static/js/2.ab6c58cd.chunk.js": "/board-sw1/static/js/2.ab6c58cd.chunk.js",
+    "static/js/2.ab6c58cd.chunk.js.map": "/board-sw1/static/js/2.ab6c58cd.chunk.js.map",
+    "index.html": "/board-sw1/index.html",
+    "static/css/main.7a8d2e34.chunk.css.map": "/board-sw1/static/css/main.7a8d2e34.chunk.css.map",
+    "static/js/2.ab6c58cd.chunk.js.LICENSE.txt": "/board-sw1/static/js/2.ab6c58cd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/board-sw1/static/media/dbb.38942763.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cc61052.js",
+    "static/js/2.ab6c58cd.chunk.js",
+    "static/css/main.7a8d2e34.chunk.css",
+    "static/js/main.a08f860b.chunk.js"
+  ]
+}
